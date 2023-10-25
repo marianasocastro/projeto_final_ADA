@@ -1,0 +1,1024 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@300;400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root{
+    --primary-color: #23A6F0;
+    --danger-color: #E74040;
+    --secondary-color: #40BB15;
+    --faded-secondary-color-2: #FFDCD1;
+    --light-gray-1: #FAFAFA;
+    --faded-secondary-color-1: #B9EAA8;
+    --faded-primary-color: #B2E3FF;
+    --alert-color: #E77C40;
+    --dark-color: #252B42;
+    --muted-color: #BDBDBD;
+    --light-color: #FFFFFF;
+    --secondary: #F3CD03;
+    --second-text-color: #737373;
+    
+}
+
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--light-color);
+    
+}
+
+.container{
+    margin: 0 100px;
+
+}
+
+.banner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.align{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+}
+
+header{
+    background-color: var(--dark-color);
+    min-height: 100vh;
+    color: var(--light-color);
+    padding-bottom: 30px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+li{
+    margin-right: 20px;
+
+}
+
+.link-navbar{
+    color: var(--light-color);
+}
+
+.link-navbar:hover{
+    color: var(--primary-color);
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    
+}
+
+.text-blue{
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.btn-blue{
+    background-color: var(--primary-color);
+    padding: 15px;
+    border-radius: 5px;
+    color: var(--light-color);
+    font-weight: 600;
+}
+
+.btn-blue:hover{
+    background-color: var(--faded-primary-color);
+    color: var(--primary-color);
+    
+}
+
+.btn-dark{
+    background-color: var(--dark-color);
+    padding: 15px;
+    border: solid 1px var(--primary-color);
+    border-radius: 5px;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.btn-dark:hover{
+    background-color: var(--light-color);
+    padding: 15px;
+    border: solid 1px  var(--light-color);
+    color: var(--primary-color);
+
+}
+
+.learn-more:hover{
+    color: var(--secondary-color);
+}
+
+.banner-btn{
+    width: 48%;
+}
+
+.header-text{
+    width: 40%;
+}
+
+.header-text > h1{
+    margin-bottom: 30px;
+    font-size: 50px;
+    
+}
+
+.header-text >  p{
+    margin-bottom: 30px;
+    font-size: 20px;
+    
+}
+
+.banner > img{
+    width: 450px;
+    height: 450px;
+}
+
+.watch {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    padding-bottom: 50px;
+}
+
+.watch-text{
+    width: 40%;
+    padding-right: 40px;
+}
+
+.watch-text > hr{
+    border-color: var(--danger-color);
+    border-style: solid;
+    width: 60px;
+    border-width: 3px;
+    margin-bottom: 20px;
+}
+
+.watch-text > h2{
+    margin-bottom: 20px;
+    font-size: 35px;
+
+}
+
+.watch-text > p{
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: var(--second-text-color);
+
+}
+
+.cards{
+
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 10px;
+    box-shadow: 10px 10px 5px var(--light-gray-1);
+    padding: 20px;
+    border-radius: 5px;
+    width: 40%;
+    text-align: left;
+
+}
+
+.card > hr{
+    border-color: var(--danger-color);
+    border-style: solid;
+    width: 60px;
+    border-width: 3px;
+    margin-bottom: 20px;
+}
+
+
+.watch > img{
+    width: 400px;
+    height: 400px;
+
+}
+
+.icon-check{
+    background-color: var(--faded-primary-color);
+    color: var(--primary-color);
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    width: 10% !important;
+}
+
+.icon-credit-card{
+    background-color: var(--faded-secondary-color-2);
+    color: var(--danger-color);
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    width: 10% !important;
+}
+
+.icon-tag{
+    background-color: var(--faded-secondary-color-1);
+    color: var(--secondary-color);
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    /* margin-bottom: 20px; */
+    width: 10% !important;
+}
+
+/* COURSES TABLE */
+
+.table-courses{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    width: 50%;
+
+}
+
+.table-courses > hr{
+    border-color: var(--danger-color);
+    border-style: solid;
+    width: 60px;
+    border-width: 3px;
+    margin-bottom: 5px;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    border-collapse: collapse;
+
+}
+
+thead{
+    background-color: var(--dark-color);
+    
+}
+
+th{
+    color: var(--light-color);
+    padding: 5px;
+    border: none;
+    
+
+}
+
+td{
+    padding: 10px;
+}
+
+tbody > tr:hover{
+    background-color: var(--light-gray-1);
+}
+
+/* COURSES */
+
+.courses{
+    padding: 50px 0;
+}
+
+.courses-head{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    row-gap: 10px;
+    margin-bottom: 40px;
+
+}
+
+.courses-head > .text-blue{
+    margin-bottom: 0px !important;
+}
+
+.courses-text{
+    width: 60%;
+}
+
+.courses-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    column-gap: 5px;
+
+}
+
+.courses-card{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: flex-start;
+    width: 30%;
+}
+
+.courses-card > img{
+    width: 100%;
+}
+
+.courses-card-text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: flex-start;
+    
+}
+
+.courses-card-text > .text-blue{
+    margin-bottom: 5px !important;
+}
+
+.courses-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+    font-size: 14px;
+}
+
+.price{
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.price > span {
+    color: var(--muted-color);
+    text-decoration: line-through;
+}
+
+.icon-time{
+    color: var(--primary-color);
+}
+
+.icon-bar-chart{
+    color: var(--alert-color);
+
+}
+
+.icon-signal{
+    color: var(--secondary-color);
+
+}
+
+.icon-download-alt{
+    color: var(--second-text-color);
+}
+
+.learn-more-btn{
+    color: var(--primary-color);
+    background-color: var(--light-color);
+    border: 1.5px solid var(--primary-color);
+    border-radius: 50px;
+    font-weight: bold;
+    padding: 10px;
+    width: 45%;
+}
+
+.learn-more-btn:hover{
+    color: var(--light-color);
+    background-color: var(--primary-color);
+    border: 1.5px solid var(--light-color);
+   
+}
+
+/* TESTIMONIALS */
+
+.testimonials{
+    background-color: var(--dark-color);
+    padding: 50px 0;
+}
+
+.textimonial-head{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    row-gap: 10px;
+    color: var(--light-color);
+    margin-bottom: 40px;
+}
+
+.textimonial-head > .text-blue{
+    margin-bottom: 0px !important;
+}
+
+.textimonial-head > h2{
+    font-size: 35px;
+}
+
+.cards-testimonial{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    column-gap: 7px;
+
+}
+
+.card-testimonial{
+    background-color: var(--light-color);
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    text-align: center;
+    max-width: 25%;
+
+}
+
+.testimonial-user{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.user-info{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.user-info > .text-blue{
+    margin-bottom: 5px !important;
+}
+
+.icon-star{
+    color: var(--secondary);
+}
+
+/* CONTACT */
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto !important;
+    width: 70%;
+    
+
+}
+
+.contact > h2{
+    margin-bottom: 20px;
+    font-size: 35px;
+
+}
+
+.contact > .text-blue{
+    margin-bottom: 0 !important;
+}
+
+
+.contact-text{
+    width: 50%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 500px;
+}
+
+.form-div{
+    width: 100%;
+}
+
+.form-div > input{
+    width: 100%;
+    background-color: var(--light-gray-1);
+    padding: 15px;
+    margin-top: 10px;
+    border: solid 1px var(--muted-color);
+    border-radius: 5px;
+}
+
+form > button {
+    margin: 0 auto;
+    width: 50%;
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 80px !important;
+    margin-bottom: 40px !important;
+}
+
+footer > div> h3{
+    margin-bottom: 10px;
+}
+
+.nav-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.nav-footer > li{
+    margin-bottom: 10px;
+}
+
+.link-footer{
+    font-weight: 600;
+    color: var(--second-text-color);
+    font-size: 14px;
+}
+
+.link-footer:hover{
+    color: var(--primary-color);
+}
+
+.footer-social > p{
+    width: 80%;
+
+}
+
+.icons{
+    margin-top: 20px;
+}
+
+.icons > i{
+    font-size: 25px;
+    color: var(--primary-color);
+    margin-right: 20px;
+
+}
+
+
+
+/* MEDIAS */
+
+@media (max-width: 1090px){
+
+    .banner{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    header{
+        min-height: 100vh;
+    }
+
+    .header-text{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;   
+    }
+
+    .banner-btn{
+        width: 200px !important;
+    }
+
+    
+    .header-text > h1{
+        margin-bottom: 30px;
+        font-size: 35px;
+        
+    }
+
+
+    .card{
+        min-width: 50%;
+    }
+
+    .watch > img {
+        max-width: 350px;
+        max-height: 350px;
+    }
+
+    .contact-text{
+        width: 60%;
+    }
+
+}
+
+@media (max-width: 960px){
+
+    .learn-more-btn{
+        width: 150px;
+    }
+
+    .banner > img{
+        max-width: 350px;
+        max-height: 350px;
+    }
+
+    .watch > img {
+        max-width: 300px;
+        max-width: 300px;
+    }
+
+}
+
+@media (max-width: 905px){
+
+    .watch {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .watch-text{
+        width: 80%;
+        text-align: center;
+
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .card{
+        width: 20%;
+    }
+
+    .card > h4{
+        font-size: 14px;
+    }
+
+    .img-table{
+        display: none;
+    }
+
+    .hr-none{
+        display: none;
+    }
+
+    .table-courses{
+        width: 100%;
+    
+    }
+
+    .courses-cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        row-gap: 20px;
+    
+    }
+
+    .courses-card{
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .courses-card > img{
+        width: 40%;
+
+    }
+
+    .courses-card-text{
+        width: 60%;
+        font-size: 14px;
+    }
+
+    .courses-text{
+        width: 80%;
+    }
+
+
+}
+
+@media (max-width: 820px){
+
+    header{
+        min-height: 60vh !important;
+    }
+
+    .cards-testimonial{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        row-gap: 7px;
+        
+    
+    }
+    
+    .card-testimonial{
+        background-color: var(--light-color);
+        display: flex;
+        flex-direction: column;
+        row-gap: 7px;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 30px;
+        text-align: center;
+        max-width: 100%;
+    
+    }
+
+    .textimonial-head {
+        align-items: center;
+        text-align: center;
+    }
+
+    .textimonial-head > h2{
+        font-size: 30px;
+    }
+
+    .contact-text{
+        width: 80%;
+    }
+
+    .courses-card > img{
+        width: 30%;
+
+    }
+
+    .courses-card-text{
+        width: 70%;
+        row-gap: 7px;
+ 
+    }
+
+    .courses-card-text > .text-blue{
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 780px){
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        font-weight: 600;
+        margin-bottom: 50px;
+        
+    }
+
+
+}
+
+
+@media (max-width: 400px){
+
+    .banner > img{
+        width: 200px;
+        height: 200px;
+
+    }
+
+    header{
+        min-height: 100vh;
+    }
+
+    .header-text{
+        width: 100%;
+        font-size: 14px;
+        margin-top: 30px;
+
+    }
+
+    .header-text > p{
+        font-size: 14px;
+    }
+
+    .banner-btn{
+        width: 120px !important;
+    }
+
+    
+    .header-text > h1{
+        margin-bottom: 15px;
+        font-size: 20px;
+        
+    }
+
+    .header-text > .text-blue{
+        margin-bottom: 5px;
+  
+        
+    }
+
+    .container{
+        margin: 0 50px;
+    
+    }
+
+    .link-navbar{
+        font-size: 14px;
+    }
+
+
+    .courses-card{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .courses-card > img {
+        width: 100%;
+    }
+
+    .courses-card-text {
+        width: 100%;
+        row-gap: 10px;
+    }
+
+    .courses-icons{
+        font-size: 12px;
+    }
+
+    .learn-more-btn{
+        margin: 0 auto;
+    }
+
+    .courses-head {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .courses-text {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .cards-testimonial{
+        margin-top: 20px;
+    
+    }
+
+    .contact{
+        width: 100%;
+ 
+    }
+
+    .contact-text {
+        font-size: 14px;
+    }
+
+    form{
+        width: 300px;
+    }
+
+    .form-div > label{
+        text-align: left !important;
+    }
+
+    .watch-text > h2 {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+    .watch-text{
+        padding-right: 0px;
+
+    }
+
+    table{
+        width: 80%;
+        font-size: 12px;
+    }
+
+    nav > .btn-blue {
+        display: none;
+    }
+
+    .navbar{
+        row-gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-footer{
+        flex-direction: row;
+        font-size: 14px;
+    }
+
+    footer > div> h3 {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .footer-social{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card{
+        width: 100%;
+        padding: 10px;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .card > p{
+        font-size: 14px;
+    }
+
+    .text-banner{
+        display: none;
+    }
+
+}
+
+
+    
+
+
